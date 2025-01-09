@@ -1,6 +1,6 @@
 import { test, expect } from '@playwright/test';
 
-test('test', async ({ page }) => {
+test('test external link', async ({ page }) => {
   await page.goto('https://forum.katalon.com/');
   await page.getByPlaceholder('Search').click();
   await page.getByPlaceholder('Search').fill('testops - bypass');
